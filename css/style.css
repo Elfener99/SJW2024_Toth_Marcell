@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap");
+header {
+  background: url("../img/balaton_bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1,
+footer {
+  font-family: "Marhey", sans-serif;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  letter-spacing: 3px;
+}
+h2 {
+  font-family: "Marhey", sans-serif;
+  color: #1283b9;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  font-variant: small-caps;
+}
+footer {
+  font-size: 1.5rem;
+  position: relative;
+  bottom: -300px;
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.imageshadow {
+  box-shadow: 1px 1px 3px #06435f;
+}
+main div.row table {
+  width: 80%;
+  margin-inline: auto;
+  box-shadow: 1px 1px 10px #06435f;
+}
+td,
+th {
+  padding: 10px;
+}
+th {
+  text-align: center;
+  font-family: "Marhey", sans-serif;
+  color: white;
+}
+table tr:first-child {
+  background: #1283b9;
+}
+table tr:nth-child(2) {
+  background-color: #06435f;
+}
+table tr td:first-child {
+  color: #06435f;
+  font-variant: small-caps;
+  font-weight: bold;
+  width: 25%;
+}
+tr {
+  background: rgba(18, 131, 185, 10%);
+  border-bottom: 1px solid black;
+}
+tr:hover {
+  background: rgba(18, 131, 185, 30%);
+}
+.imagesGrid {
+  display: grid;
+  grid-template-areas: balaton balaton zala raba, balaton balaton tisza tisza,
+    dunakanyar tiszato tisza tisza;
+}
+.imagesGrid img {
+  width: auto;
+}
+.balatonImg {
+  grid-area: balaton;
+}
+.dunakanyarImg {
+  grid-area: dunakanyar;
+}
+.tiszatoImg {
+  grid-area: tiszato;
+}
+.tiszaImg {
+  grid-area: tisza;
+}
+.zalaImg {
+  grid-area: zala;
+}
+.rabaImg {
+  grid-area: raba;
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
